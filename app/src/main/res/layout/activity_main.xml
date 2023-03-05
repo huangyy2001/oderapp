@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="美味蟹堡"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="32dp"
+        android:text="炸海草"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="健怡可樂"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        android:text="炸珊瑚"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chk5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="海草奶昔"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/chk1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/burger" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/chk2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/frenchfry" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/chk3"
+        app:layout_constraintTop_toBottomOf="@+id/chk1"
+        app:srcCompat="@mipmap/softdrink" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/chk4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@mipmap/friedcoral" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="47dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/chk5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@mipmap/soup" />
+
+    <TextView
+        android:id="@+id/showOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="272dp"
+        android:text="請點餐"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="336dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/output1"
+            android:layout_width="44dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/chk1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/burger" />
+
+        <ImageView
+            android:id="@+id/output2"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toEndOf="@+id/chk2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/frenchfry" />
+
+        <ImageView
+            android:id="@+id/output3"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/chk3"
+            app:layout_constraintTop_toBottomOf="@+id/chk1"
+            app:srcCompat="@mipmap/softdrink" />
+
+        <ImageView
+            android:id="@+id/output4"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/chk4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@mipmap/friedcoral" />
+
+        <ImageView
+            android:id="@+id/output5"
+            android:layout_width="47dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/chk5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@mipmap/soup" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
